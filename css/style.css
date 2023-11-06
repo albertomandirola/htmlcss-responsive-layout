@@ -36,13 +36,15 @@ footer{
     width: 100%;
     border: 1px dashed black;
     height: 300px;
-    margin: 10px 30px;
-    border-radius:10%;
+    border-radius:20px;
+    margin: 10px;
 }
 
 .content{
     height: 100px;
 }
+
+/* BACKGROUNG*/
 
 .bg-lightblue{
     background-color:rgb(81, 191, 255);
@@ -54,4 +56,41 @@ footer{
 
 .bg-white{
     background-color: #fff;
+}
+
+/* MEDIA */
+
+@media  screen and (min-width:412px) {
+    .first .col:first-child{
+        height: 600px;
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    .first .col{
+        height: 600px;
+        width: calc(100% / 3 - 20px);
+        
+    }
+
+    .fourth .col:first-child{
+        width: 100%;
+    }
+
+    .fourth .col{
+        width: calc(50% - 20px);
+        
+    }
+    
+}
+
+@media  screen and (min-width:810px) {
+    
+    .second .col{
+        width: 50%;
+    }
+    .fourth .col{
+        width: calc(100% / 3);
+        
+    }
+    
 }
