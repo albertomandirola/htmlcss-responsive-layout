@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background-color: blue;
+}
+
+.container{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.col-50{
+    width: 50%;
+    border: 1px dashed black;
+}
+
+.content{
+    height: 20px;
+}
+
+.bg-lightblue{
+    background-color:rgb(20, 96, 247);
+}
