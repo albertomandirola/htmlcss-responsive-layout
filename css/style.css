@@ -9,6 +9,12 @@ header{
     margin-bottom: 30px ;
 }
 
+.d-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 footer{
     background-color: rgba(22, 22, 22);
 }
@@ -18,7 +24,7 @@ footer{
 }
 
 .first .col:first-child{
-    height: 600px;
+    text-align: start;
 }
 
 .row{
@@ -35,15 +41,30 @@ footer{
 .col{
     width: 100%;
     border: 1px dashed black;
-    height: 300px;
     border-radius:20px;
     margin: 10px;
+    text-align: center;
 }
 
-.content{
-    height: 100px;
+main img{
+    width: 100%;
 }
 
+.third img{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    
+}
+
+.circular-landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
 /* BACKGROUNG*/
 
 .bg-lightblue{
@@ -58,16 +79,23 @@ footer{
     background-color: #fff;
 }
 
+.font{
+    font-size: 40px;
+}
+
+.wid-30{
+    font-size: 4rem;
+}
+
 /* MEDIA */
 
 @media  screen and (min-width:412px) {
     .first .col:first-child{
-        height: 600px;
         width: calc(100% / 3 * 2 - 20px);
     }
 
     .first .col{
-        height: 600px;
+        
         width: calc(100% / 3 - 20px);
         
     }
@@ -86,7 +114,7 @@ footer{
 @media  screen and (min-width:810px) {
     
     .second .col{
-        width: 50%;
+        width: calc(50% - 20px);
     }
     .fourth .col{
         width: calc(100% / 3);
